@@ -12,4 +12,12 @@ public class Deck {
     public int count() {
         return this.deck.size();
     }
+
+    public void addCard(Card card){
+        this.deck.add(card);
+    }
+
+    public void removeCard(Card card){
+        this.deck.remove(card);
+    }
 }
