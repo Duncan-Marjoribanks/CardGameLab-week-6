@@ -34,5 +34,17 @@ public class DeckTest {
         assertEquals(0, deck.count());
     }
 
+    @Test
+    public void canEmptyDeck(){
+        deck.emptyDeck();
+        assertEquals(0, deck.count());
+    }
+
+    @Test
+    public void canPopulateFullDeckOfCards(){
+        deck.emptyDeck();
+        deck.populateFully();
+        assertEquals(52, deck.count());
+    }
 
 }

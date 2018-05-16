@@ -20,4 +20,6 @@ public class CardTest {
     public void canGetRank(){
         assertEquals(RankType.JACK, card.getRank());
     }
+
+
 }
